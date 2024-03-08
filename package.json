@@ -1,0 +1,11 @@
+{
+  "name": "PracticeTesting",
+  "version": "1.0.0",
+  "dependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.24",
+    "express": "^4.17.1",
+    "playwright": "^1.42.1"
+  },
+  "scripts": {}
+}

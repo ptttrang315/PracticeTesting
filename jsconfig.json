@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@pages/*": [
+        "./src/page-objects/pages/*"
+      ],
+      "@locators/*": [
+        "./src/page-objects/locators/*"
+      ],
+      "@common/*": [
+        "./src/common/*"
+      ]
+    }
+  }
+}
