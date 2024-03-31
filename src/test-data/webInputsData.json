@@ -1,0 +1,38 @@
+{
+  "number": {
+    "validCases": [
+      {
+      "tcID": "WI-01",
+      "testName": "a positive number",
+      "inputData": "123456789",
+      "outputData": "123456789"
+      },
+      {
+        "tcID": "WI-02",
+        "testName": "a negative number",
+        "inputData": "-256",
+        "outputData": "-256"
+      },
+      {
+        "tcID": "WI-03",
+        "testName": "a decimal number",
+        "inputData": "-256",
+        "outputData": "-256"
+      },
+      {
+        "tcID": "WI-04",
+        "testName": "a number e",
+        "inputData": "-256",
+        "outputData": "-256"
+      }
+    ],
+    "invalidCases": [{
+      "testName": "commonjs",
+      "target": "es6",
+      "sourceMap": true
+    }]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

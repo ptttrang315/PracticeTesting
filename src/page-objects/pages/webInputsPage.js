@@ -30,9 +30,9 @@ class WebInputsPage {
      * Simulates an 'ArrowUp' key press on a spin box
      * @param {string} type - The type of the spin box
      */
-    async useArrowForSpinBox(arrow, number = null, typeField) {
-        await LocatorUtilities.inputText(this.page, this.elements.inputType(typeField), number, 'spin-box');
-        await LocatorUtilities.keyPress(this.page, this.elements.inputType(typeField), arrow);
+    async useArrowForSpinBox(startNumber = null, arrow) {
+        await LocatorUtilities.inputText(this.page, this.elements.inputType("number"), startNumber, 'spin-box');
+        await LocatorUtilities.keyPress(this.page, this.elements.inputType("number"), arrow);
     }
 
     /**

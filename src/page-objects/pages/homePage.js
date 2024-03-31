@@ -12,8 +12,8 @@ class HomePage{
      * @param {string} type - The type of the tab
      * @param {string} tabName - The name of the tab
      */
-    async selectTab(type, tabName) {
-        await LocatorUtilities.clickElement(this.page, this.elements.navigationTab(type, tabName));
+    async selectTab(group, menuName) {
+        await LocatorUtilities.clickElement(this.page, this.elements.navigationTab(group, menuName));
     }
 }
 

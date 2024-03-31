@@ -2,13 +2,24 @@
   "name": "PracticeTesting",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "commonjs",
   "dependencies": {
+    "@babel/runtime": "^7.24.1",
     "@playwright/test": "^1.42.1",
     "@types/node": "^20.11.24",
-    "express": "^4.17.1",
-    "playwright": "^1.42.1"
+    "express": "^4.17.1"
   },
   "scripts": {
     "test": "npx playwright test"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.3",
+    "@babel/plugin-transform-runtime": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
+    "@cucumber/cucumber": "^10.3.1",
+    "cucumber": "^6.0.7",
+    "playwright": "^1.42.1",
+    "ts-node": "^10.9.2"
   }
 }
