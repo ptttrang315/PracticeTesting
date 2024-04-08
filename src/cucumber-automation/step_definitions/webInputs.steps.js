@@ -1,8 +1,7 @@
-const { Given, When, Then } = require('@cucumber/cucumber');
-import { WebInputsPage } from '@pages/webInputsPage';
-import { LoginUtilities } from '@common/login-utilities';
-import { HomePage } from '@pages/homePage';
-const {Before} = require("cucumber");
+const { WebInputsPage } = require ('../../page-objects/pages/webInputsPage');
+const { LoginUtilities } = require ('../../common/login-utilities');
+const { HomePage } = require ('../../page-objects/pages/homePage');
+const {Before, Given, When, Then} = require("@cucumber/cucumber");
 
 let webInputsPage;
 let homePage;

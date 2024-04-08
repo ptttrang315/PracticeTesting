@@ -50,4 +50,4 @@ class AssertUtilities {
 
 }
 
-export { AssertUtilities }
+module.exports = { AssertUtilities }

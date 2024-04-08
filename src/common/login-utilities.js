@@ -1,4 +1,4 @@
-import { chromium } from 'playwright';
+const { chromium } = require ('playwright');
 
 class LoginUtilities {
     /**
@@ -20,4 +20,4 @@ class LoginUtilities {
     }
 }
 
-export { LoginUtilities }
+module.exports = { LoginUtilities }

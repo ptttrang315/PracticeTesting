@@ -11,8 +11,9 @@ const { defineConfig, devices } = require('@playwright/test');
  * @see https://playwright.dev/docs/test-configuration
  */
 module.exports = defineConfig({
-  testDir: './src/tests',
+  testDir: './src/cucumber-automation/features',
   /* Run tests in files in parallel */
+  // testDir: './src/tests',
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
@@ -54,4 +55,3 @@ module.exports = defineConfig({
     // }
   ]
 });
-

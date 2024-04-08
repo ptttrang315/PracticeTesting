@@ -1,4 +1,4 @@
-import { AssertUtilities } from '@common/assert-utilities';
+const { AssertUtilities } = require ('./assert-utilities');
 
 class LocatorUtilities {
     /**
@@ -88,4 +88,4 @@ class LocatorUtilities {
 
 }
 
-export { LocatorUtilities }
+module.exports = { LocatorUtilities }

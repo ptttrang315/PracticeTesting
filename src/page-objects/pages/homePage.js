@@ -1,5 +1,5 @@
-import { LocatorUtilities } from '@common/locator-utilities';
-import { homePageElements }  from '@locators/homePageElements';
+const { LocatorUtilities } = require ('../../common/locator-utilities');
+const { homePageElements } = require ('../locators/homePageElements');
 
 class HomePage{
     constructor(page) {
@@ -17,4 +17,4 @@ class HomePage{
     }
 }
 
-export { HomePage };
+module.exports = { HomePage };

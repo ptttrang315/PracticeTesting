@@ -1,18 +1,11 @@
+const common = `
+  --require src/common/**/*.js
+  --require src/page-objects/**/*.js
+  --require src/cucumber-automation/step_definitions/**/*.steps.js
+  --config playwright.config.js 
+  `;
+
 module.exports = {
-    default: {
-        formatOptions: {
-            snippetInterface: "async-await"
-        },
-        publishQuiet: true,
-        dryRun: false,
-        requireModule: [
-            "ts-node/register"
-        ],
-        paths: [
-            "src/test/**/features/"
-        ],
-        require: [
-            "src/test/**/steps/*.ts"
-        ]
-    }
-}
+    default: `${common} src/cucumber-automation/features/**/*.feature`
+};
+

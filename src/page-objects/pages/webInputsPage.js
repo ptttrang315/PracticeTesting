@@ -1,6 +1,6 @@
-import { webInputsElements } from '@locators/webInputsElements';
-import { LocatorUtilities } from "@common/locator-utilities";
-import { expect } from '@playwright/test';
+const { webInputsElements } = require ('../locators/webInputsElements');
+const { LocatorUtilities } = require ("../../common/locator-utilities");
+const { expect } = require ('@playwright/test');
 
 class WebInputsPage {
     constructor(page) {
@@ -82,4 +82,4 @@ class WebInputsPage {
 
 }
 
-export { WebInputsPage };
+module.exports = { WebInputsPage };

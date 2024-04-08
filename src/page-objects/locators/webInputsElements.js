@@ -5,4 +5,4 @@ const webInputsElements =  {
     clearBtn: '//*[@id="btn-clear-inputs"]',
 }
 
-export { webInputsElements }
+module.exports = { webInputsElements }
